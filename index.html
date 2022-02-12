@@ -29,23 +29,27 @@
   <body>
     <main>
       <h1 class="main-heading text-center py-5 m-0 fw-bold">Roll The Dices!</h1>
-      <h2 class="result text-center m-0 fs-1">Play!</h2>
+      <h2 class="text-center m-0 fs-1">Play!</h2>
 
       <!-- dice -->
-      <div class="container d-flex justify-content-center">
+      <div class="d-flex justify-content-center">
         <div class="dices px-5 text-center py-4">
           <h4>First Player</h4>
-          <img class="py-2" src="./images/dice6.png" alt="" />
+          <img id="first-img" class="py-2" src="./images/dice6.png" alt="" />
         </div>
         <div class="dices px-5 text-center py-4">
           <h4>Second Player</h4>
-          <img class="py-2" src="./images/dice6.png" alt="" />
+          <img id="second-img" class="py-2" src="./images/dice6.png" alt="" />
         </div>
       </div>
 
       <!-- button -->
       <div class="text-center d-grid col-4 mx-auto">
-        <button type="button" class="btn btn-danger btn-lg rounded">
+        <button
+          onclick="diceRolling()"
+          type="button"
+          class="btn btn-danger btn-lg rounded"
+        >
           Roll
         </button>
       </div>
